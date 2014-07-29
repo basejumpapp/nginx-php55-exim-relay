@@ -14,7 +14,10 @@ ADD exim.conf /etc/exim/exim.conf
 # add custom exim startup script
 ADD exim-start.sh /usr/local/sbin/exim-start.sh
 
-# add new supervisd conf file with exim
+# add custom nginx startup script
+ADD nginx-start.sh /usr/local/sbin/nginx-start.sh
+
+# add new supervisord conf file with exim
 ADD supervisord.conf /etc/
 
 # create a log file for supervisord
